@@ -5,6 +5,9 @@
 ```bash
 
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o artifacts/simple-image/apiextensions-apiserver
+
+
+docker build -t quay.io/mchirico/apiextensions-apiserver:v1 ./artifacts/simple-image
 ```
 
 
