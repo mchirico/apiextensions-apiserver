@@ -10,7 +10,20 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o artifacts/simple-image/apie
 docker build -t quay.io/mchirico/apiextensions-apiserver:v1 ./artifacts/simple-image
 
 docker push quay.io/mchirico/apiextensions-apiserver:v1
+
+
+
 ```
+
+# Deploy to kubernetes
+
+```bash
+
+kubectl apply -f artifacts/example
+```
+
+
+
 
 
 
