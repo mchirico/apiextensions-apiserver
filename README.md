@@ -1,5 +1,17 @@
 # apiextensions-apiserver
 
+
+
+```bash
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o artifacts/simple-image/kube-sample-apiserver
+```
+
+
+
+
+
+
 Implements: https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/thirdpartyresources.md
 
 It provides an API for registering `CustomResourceDefinitions`.
